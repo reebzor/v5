@@ -1,0 +1,73 @@
+Linux
+Windows
+Virtualization
+Networking
+Security
+
+.linux {
+    width: 85%;
+    -moz-animation: linux 2s ease;
+    -webkit-animation: linux 2s ease;
+}
+.virtualization {
+    width: 90%;
+    -moz-animation: virtualization 2s ease;
+    -webkit-animation: virtualization 2s ease;
+}
+.networking {
+    width: 80%;
+    -moz-animation: networking 2s ease;
+    -webkit-animation: networking 2s ease;
+}
+.windows {
+    width: 95%;
+    -moz-animation: windows 2s ease;
+    -webkit-animation: windows 2s ease;
+}
+.security {
+    width: 75%;
+    -moz-animation: security 2s ease;
+    -webkit-animation: security 2s ease;
+
+
+@-moz-keyframes linux {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-moz-keyframes virtualization {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes networking {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes windows {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+@-moz-keyframes security {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+
+@-webkit-keyframes linux {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-webkit-keyframes virtualization {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes networking {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes windows {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+@-webkit-keyframes security {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
