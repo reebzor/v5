@@ -31,7 +31,7 @@ Security
     -webkit-animation: security 2s ease;
 }
 .cloud {
-    width: 85%;
+    width: 75%;
     -moz-animation: cloud 2s ease;
     -webkit-animation: cloud 2s ease;
 }
@@ -58,7 +58,7 @@ Security
 }
 @-moz-keyframes cloud {
   0%   { width: 0px;  }
-  100% { width: 85%;  }
+  100% { width: 75%;  }
 }
 
 @-webkit-keyframes linux {
@@ -83,5 +83,5 @@ Security
 }
 @-webkit-keyframes cloud {
   0%   { width: 0px;  }
-  100% { width: 85%;  }
+  100% { width: 75%;  }
 }
