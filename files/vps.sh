@@ -84,7 +84,7 @@ AllowUsers root@50.191.168.56 serveradmin
 # Install Fail2Ban
 systemctl enable fail2ban > /dev/null 2>&1
 cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-#sed -i 's/ignoreip = 127.0.0.1/8/ignoreip = 127.0.0.1/8 50.232.17.202 50.191.168.56/' /etc/fail2ban/jail.local
+#sed -i 's/ignoreip = 127.0.0.1/8/ignoreip = 127.0.0.1/8 8.8.8.8/' /etc/fail2ban/jail.local
 
 echo "
 [sshd]
