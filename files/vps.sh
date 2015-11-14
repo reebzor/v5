@@ -19,7 +19,8 @@ echo "This server is running " cat /etc/redhat-release
 echo "First things first, let's reset your root password "
 passwd
 echo "Cool, that's done"
-echo ""
+echo "While we're at it, let's lock down root ssh to a tursted IP "
+read -p "Enter a trusted IP: " -r trustedIP
 read -p "Paste in your ssh pub key: " -r pubkey
 read -p "Enter the Hostname of the VPS: " -r vpshostname
 read -p "Enter the Domain name: " -r domainName
@@ -78,7 +79,7 @@ echo "
 RSAAuthentication yes
 PubkeyAuthentication yes
 AuthorizedKeysFile      .ssh/authorized_keys
-AllowUsers root@50.191.168.56 serveradmin
+AllowUsers root@$trsutedIP $serveradminUser
 " >> /etc/ssh/sshd_config
 
 # Install Fail2Ban
