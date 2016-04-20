@@ -125,7 +125,7 @@
               6.5 to Nginx on CentOS 7. My main reason for the change was that I was
               beginning to feel complacent with Apache and EL6. When EL7 was first released
               I struggled to understand the changes, which only motivated me to learn more.
-              Nginx seems to be better at serving up static web content compared to Apache and
+              Nginx is a little more efficient serving up static web content compared to Apache and
               is also widely used, experience with it is something that I did not have much of.
               Minor enhancements such as using HAProxy for SSL termination
               and MariaDB in favor of MySQL also took place during my migration. After
@@ -134,7 +134,9 @@
               In an effort to step up my DevOps game, I am now managing my code on my
               <a href="https://github.com/tomreeb">GitHub</a>
               and have automated the deployment of this site to production. In fact, this edit
-              was pushed using the auto deploy script!
+              was pushed using the auto deploy script! My most recent change here is the implementation of 
+              <a href="https://letsencrypt.org/">Let's Encrypt</a> for SSL.
+              Certificates are automatically renewed and installed as they approach their expiration date.
               <br><br>
               Head down to my <a class="smoothscroll" href="#resume">resume</a> section to learn about my skills
               and experience and check out my social media profiles if
