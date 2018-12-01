@@ -1,10 +1,9 @@
 include make_include
 
-NS ?= tomreeb
+NS ?= namespace
 VERSION ?= latest
-
-IMAGE_NAME ?= dotcom
-CONTAINER_NAME ?= dotcom
+IMAGE_NAME ?= nginx
+CONTAINER_NAME ?= nginx
 CONTAINER_INSTANCE ?= default
 
 .PHONY: build push shell run start stop rm release
