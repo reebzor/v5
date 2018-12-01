@@ -16,7 +16,7 @@ push:
     
 test:
 	dgoss run -d --name $(CONTAINER_NAME)-$(CONTAINER_INSTANCE) $(PORTS) $(VOLUMES) $(NS)/$(IMAGE_NAME)\:$(VERSION)
-	
+
 shell:
 	docker run --rm --name $(CONTAINER_NAME)-$(CONTAINER_INSTANCE) -i -t $(PORTS) $(VOLUMES) $(NS)/$(IMAGE_NAME)\:$(VERSION) /bin/ash
 
@@ -32,7 +32,7 @@ stop:
 rm:
 	docker rm $(CONTAINER_NAME)-$(CONTAINER_INSTANCE)
 
-release: build
+release: build test
 	make push -e VERSION=$(VERSION)
     
 default: build
