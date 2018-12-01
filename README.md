@@ -11,6 +11,7 @@ This site runs in Docker now. [DockerHub](https://hub.docker.com/r/tomreeb/dotco
 * `$ make build` Builds a container from the Dockerfile
 * `$ make push` Pushes the container to registry
 * `$ make run` Runs the container
+* `$ make test` Runs tests via [Goss](https://github.com/aelsabbahy/goss)
 * `$ make start` Runs the container in daemon mode
 * `$ make shell` Runs the container and logs into the shell
 * `$ make stop` Stops the running container
