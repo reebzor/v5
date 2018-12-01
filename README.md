@@ -1,9 +1,10 @@
 # tomreeb.com
-This is my personal website, now located at https://tomreeb.com.
 
-Credit to Styleshout's Ceevee web template http://www.styleshout.com/free-templates/ceevee/
+This is my [personal website](https://tomreeb.com)
 
-This site runs in Docker now. You can find it on DockerHub at https://hub.docker.com/r/tomreeb/dotcom/
+Credit to [Styleshout's Ceevee](http://www.styleshout.com/free-templates/ceevee/) web template
+
+This site runs in Docker now. [DockerHub](https://hub.docker.com/r/tomreeb/dotcom/)
 
 ## How to Use
 
@@ -21,4 +22,4 @@ This site runs in Docker now. You can find it on DockerHub at https://hub.docker
 `$ make build -e VERSION=0.1` Builds a container from the Dockerfile and tags it version 0.1
 `$ make start -e PORTS="-p 80:80"` Runs the container in daemon mode mapping container port 80 to host port 80
 
-**Note:** Variable defaults can be set in make_include file
+**Note:** Variable defaults can be set in `make_include` file
