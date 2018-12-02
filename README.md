@@ -10,18 +10,18 @@ This site runs in Docker now. [DockerHub](https://hub.docker.com/r/tomreeb/dotco
 
 You need to have `Docker` installed and configured. In order to run tests you need to install `Goss`.
 
-##### MacOS via Homebrew:
+### MacOS via Homebrew
 
-```
-   $ brew tap rajatvig/rajat
-   $ brew install docker goss
+```bash
+   brew tap rajatvig/rajat
+   brew install docker goss
 ```
 
-##### Linux:
+### Linux
 
-```
-    $ yum -y install docker
-    $ curl -fsSL https://goss.rocks/install | sh
+```bash
+    yum -y install docker
+    curl -fsSL https://goss.rocks/install | sh
 ```
 
 ## How to Use
