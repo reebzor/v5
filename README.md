@@ -15,7 +15,7 @@ You need to have `Docker` installed and configured. In order to run tests you ne
 ```
    $ brew tap rajatvig/rajat
    $ brew install docker goss
-   ```
+```
 
 ##### Linux:
 
