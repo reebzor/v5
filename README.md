@@ -6,6 +6,24 @@ Credit to [Styleshout's Ceevee](http://www.styleshout.com/free-templates/ceevee/
 
 This site runs in Docker now. [DockerHub](https://hub.docker.com/r/tomreeb/dotcom/)
 
+## Pre-Install
+
+You need to have `Docker` installed and configured. In order to run tests you need to install `Goss`.
+
+##### MacOS via Homebrew:
+
+```
+   $ brew tap rajatvig/rajat
+   $ brew install docker goss
+   ```
+
+##### Linux:
+
+```
+    $ yum -y install docker
+    $ curl -fsSL https://goss.rocks/install | sh
+```
+
 ## How to Use
 
 * `$ make build` Builds a container from the Dockerfile
