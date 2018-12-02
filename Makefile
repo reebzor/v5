@@ -13,7 +13,10 @@ build: Dockerfile
 
 push:
 	docker push $(NS)/$(IMAGE_NAME)\:$(VERSION)
-    
+
+lint:
+	docker run -it --rm --privileged -v `pwd`:/root/ projectatomic/dockerfile-lint dockerfile_lint
+
 test:
 	dgoss run -d --name $(CONTAINER_NAME)-$(CONTAINER_INSTANCE) $(PORTS) $(VOLUMES) $(NS)/$(IMAGE_NAME)\:$(VERSION)
 
@@ -32,7 +35,7 @@ stop:
 rm:
 	docker rm $(CONTAINER_NAME)-$(CONTAINER_INSTANCE)
 
-release: build test
+release: lint build test
 	make push -e VERSION=$(VERSION)
     
 default: build
