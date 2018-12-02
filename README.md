@@ -29,6 +29,7 @@ You need to have `Docker` installed and configured. In order to run tests you ne
 * `$ make build` Builds a container from the Dockerfile
 * `$ make push` Pushes the container to registry
 * `$ make run` Runs the container
+* `$ make lint` Runs a linter against the Dockerfile
 * `$ make test` Runs tests via [Goss](https://github.com/aelsabbahy/goss)
 * `$ make start` Runs the container in daemon mode
 * `$ make shell` Runs the container and logs into the shell
