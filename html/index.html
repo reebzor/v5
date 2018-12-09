@@ -8,7 +8,7 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Tom Reeb | IT Professional</title>
-	<meta name="description" content="Tom Reeb of Philadelphia, PA is an IT professional specializing in all aspects of Infrastructure and Systems Administration. This page serves as an online resume and landing page, please click for more info.">
+	<meta name="description" content="Tom Reeb of Philadelphia, PA is a Software Engineering Manager leading high performing engineering teams to develop mission critical platforms. This page serves as an online resume and portfolio, please click for more info.">
 	<meta name="author" content="Tom Reeb">
 
    <!-- Mobile Specific Metas
@@ -18,7 +18,7 @@
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
-	 <link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/fontcustom/fontcustom.css">
@@ -58,11 +58,10 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#resume">Experience</a></li>
+            <li><a class="smoothscroll" href="#education">Education</a></li>
+            <li><a class="smoothscroll" href="#skills">Expertise</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
-            <li><a href=http://tom.reeb.me>Blog</a></li>
-            <li><a href=https://mail.reeb.me>Mail</a></li>
-            <li><a href=https://cloud.reeb.me>Cloud</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -70,24 +69,18 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">I'm Tom Reeb.</h1>
-            <h3><span>I'm a Philadelphia based IT Professional specializing
-              in Infrastructure Architecture
-              focusing on automation, security, and high availability.
+            <h3><span>Philadelphia based Software Engineering Manager leading high performing engineering teams to develop mission critical platforms.  
             <br>
             Please <a class="smoothscroll" href="#about">start scrolling</a>
             to learn more <a class="smoothscroll" href="#about">about me</a>.</span></h3>
             <hr />
             <ul class="social">
-              <!-- <li><a href="https://www.facebook.com/tomreeb"><i class="fa fa-facebook"></i></a></li>-->
-               <li><a href="https://twitter.com/tomreeb"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="http://www.linkedin.com/in/tomreeb/"><i class="fa fa-linkedin"></i></a></li>
-               <!--<li><a href="http://tom.reeb.me"><i class="fa fa-tumblr"></i></a></li>-->
-               <li><a href="https://github.com/tomreeb"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://hub.docker.com/u/tomreeb/"><i class="fa fa-docker"></i></a></li>
-               <li><a href="http://instagram.com/tomreeb/"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://www.strava.com/athletes/reeb"><i class="fa fa-bicycle"></i></a></li>
-               <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+               <li><a href="https://twitter.com/tomreeb"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="http://www.linkedin.com/in/tomreeb/"><i class="fab fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/tomreeb"><i class="fab fa-github"></i></a></li>
+               <li><a href="https://hub.docker.com/u/tomreeb/"><i class="fab fa-docker"></i></a></li>
+               <li><a href="http://instagram.com/tomreeb/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="https://www.strava.com/athletes/reeb"><i class="fab fa-strava"></i></a></li>
             </ul>
          </div>
       </div>
@@ -115,26 +108,19 @@
 
             <h2>About Me</h2>
 
-            <p>My name is Tom Reeb. I live in Philadelphia, PA and I am a DevOps Engineer at Comcast.
-              My passion for IT stretches beyond my career and reaches far into my personal life;
+            <p>My name is Tom Reeb. I live in Philadelphia, PA and I am an Engineer Manager at Comcast.
+              My passion for technology stretches beyond my career and reaches far into my personal life;
               this site is where the two worlds converge.
-              The obvious purpose of this site is to act as an interactive web-based resume,
-              however the driving force behind building it was to further
-              increase my experience with the underlying technologies that power
-              the site itself.
+              While the frontend itself serves its intended purpose, the exercise of developing and deploying the platform was my driver for creating it. 
               <br>
-              Originally this site started out as a basic LAMP stack on CentOS 6 which was then migrated to Nginx on CentOS 7.
-              My main reason for the change was to get more comfortable with Nginx
-              and all of the changes going from EL6 to EL7. Since then I've implemented HAProxy for SSL termination using certificates from
-              <a href="https://letsencrypt.org/">Let's Encrypt</a>.
-              I've automated the certificate renewal process and the deployment of this site to production from <a href="https://github.com/tomreeb">GitHub</a>.
-              Happy to report this site is now fully containerized using <a href="https://hub.docker.com/r/tomreeb/web/">Docker</a>!
-              <br><br>
-              Head down to my <a class="smoothscroll" href="#resume">resume</a> section to learn about my skills
+              The application is packaged as a <a href="https://hub.docker.com/r/tomreeb/dotcom/">Docker</a> container and the container runs fully serverless on AWS ECS Fargate. 
+              Multiple container instances are deployed behind an Application Load Balancer, which redirects and terminates secure connections. 
+              While the majority of the stack utilizes Amazon AWS components, such as ELB, ALB, VPC, ECS, ACM, and Route 53, I am also using <a href="https://github.com/tomreeb">GitHub</a> for version control and <a href="https://hub.docker.com/r/tomreeb/dotcom/">Docker Hub</a> as the container registry.
+              Build, test, and publish of the container are automated through a Makefile.
+              <br>
+              Head down to my resume section to learn about my skills
               and experience and check out my social media profiles if
-              you wish to know more about me personally. If you feel as though I
-              may be a qualified candidate for a job, or you would just like to
-              connect with me feel free to <a class="smoothscroll" href="#contact">contact me</a>. Thanks for stopping by!
+              you wish to know more about me personally. Thanks for stopping by!
 
             </p>
 
@@ -172,7 +158,6 @@
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
-
       <!-- Work
       ----------------------------------------------- -->
       <div class="row work">
@@ -188,10 +173,15 @@
                <div class="twelve columns">
 
                   <h3>Comcast</h3>
-                  <p class="info">Manager, Product Development & Engineering <span>&bull;</span> <em class="date">July 2016 - Present</em></p>
+                  <p class="info">Manager, Software Development & Engineering <span>&bull;</span> <em class="date">July 2016 - Present</em></p>
 
                   <p>
-                    Manage a team of DevOps and Systems Engineers for Comcast's Xfinity WiFi. Primarily responsible for securing, managing, and integrating 500+ Linux servers that support over 17 million wireless access points nationwide. Lead daily scrum, backlog grooming, and sprint planning/review sessions. Develop, prioritize, and report on departmental projects and operational status for executive staff. Lead the development of a full server lifecycle management solution with continuous integration and automated deployments for the applications supporting the Xfinity WiFI Infrastructure. Utilizing Git for collaboration and source control, Spacewalk/Katello for security compliance and patching, Puppet for system configuration management, Jenkins for testing and CI/CD, Ansible for system provisioning and application deployment, Zabbix for server and AP monitoring, and Elastic Stack (ELK) and Splunk for log analysis.
+                     Oversee and coordinate technological direction and strategy for software and platform engineering. Focus on driving quality of experience through process improvement and operational excellence. Core tech council lead; responsible for setting organization-wide standards with regards to software development workflows, continuous integration and continuous delivery strategies, cloud and container orchestration. Collaborate with senior leadership to forecast budgets and resource plans. Manage a team of 12 Software and DevOps engineers developing OSS/BSS and customer facing platforms serving millions of monthly unique visitors.
+                     <ul type = "circle">
+                        <span>&bull;</span> Developed and indoctrinated standard development workflows to streamline processes and enable efficiencies through resource agility<br><br>
+                        <span>&bull;</span> Implemented structured release management processes with automated continuous integration and delivery<br><br>
+                        <span>&bull;</span> Led transformation to hybrid cloud architecture to bolster scalability and capacity while reducing operational overhead costs<br><br>
+                     </ul>
                   </p>
 
                </div>
@@ -206,7 +196,12 @@
                   <p class="info">Manager, IT Infrastructure <span>&bull;</span> <em class="date">August 2013 - July 2016</em></p>
 
                   <p>
-                    Manager of IT Infrastructure and Operations in a mixed environment of over one hundred physical and virtual Windows and Linux servers, on premises and AWS. Manage IT Helpdesk staff that support users at four sites. Automated DevOps configurations, deployments, builds, and patches with Bash, Python, Ansible, Spacewalk, Git, and TeamCity. Developed and executed plans to achieve 100% virtualization with VMware vSphere, including deployment of Veeam Backup & Replication. Redesigned Storage Area Network consisting of HP 3PAR, IBM XIV, and NetApp FAS devices with Fiber Channel, iSCSI, NFS, and CIFS connectivity. Worked with application developers to strategically design web, app, and SQL environments for increased performance and security of Coriell’s custom built .NET applications. Built a highly available load balancer cluster using HAProxy for production application servers and customer facing sites. Worked with PhD staff scientists to develop Linux HPC cluster for processing of large sets of genomic data. Lead project to replace primary ISP with dedicated fiber, increasing bandwidth by a factor of 5 at a cost savings. Upgraded and migrated existing telecommunications system to a cloud hosted solution saving the organization over $35,000 annually. Worked with IT management team to launch a change control/management system to increase transparency and consistency in IT. Lead project to build and implement asset management and helpdesk solutions to streamline department work. Architected and executed a complete network overhaul focusing on High Availability including redundant ISPs with automated failover, active/standby firewall cluster, SSL VPN connectivity with two-factor authentication, VLAN segmentation, and centrally managed, RADIUS authenticated 802.11ac Wi-Fi network for employees and guests in multi floor main office. Implemented Nagios for network, server, and application monitoring. Worked with CIO to develop annual budgets, Disaster Recovery and Contingency plans, RFPs, and SOPs.
+                     Responsible for all aspects of IT infrastructure for primary and remote offices. Provide leadership and direction for help desk and system administration staff. Hands-on project manager, technical lead for all IT-related projects.
+                     <ul type = "circle">
+                        <span>&bull;</span> Led enterprise-wide disaster recovery project and fault tolerant network re-architecture to improve operational stability<br><br>
+                        <span>&bull;</span> Assisted senior leadership and scientific staff through bidding processes and RFPs for research grants <br><br>
+                        <span>&bull;</span> Reduced annual IT spend year over year through contract negotiations and operational improvements<br><br>
+                     </ul>
                   </p>
 
                </div>
@@ -221,16 +216,12 @@
                   <p class="info">Infrastructure Administrator <span>&bull;</span> <em class="date">July 2012 - August 2013</em></p>
 
                   <p>
-                    Administrator for 99% virtualized infrastructure consisting
-                    of 20+ VMware ESXi hosts, 250 Linux and Windows guests, and
-                    physical Active Directory and File servers at 14 worldwide.
-                    Worked with a team to develop and execute Disaster Recovery
-                    plan. Configure and manage backups of local and remote file
-                    servers with CommVault. Configure and manage NetApp FAS SAN
-                    storage for NFS, iSCSI and CIFS and utilizing Snap Mirroring
-                    to sync SANs between sites. Lead a project to deploy a private
-                    cloud file sharing solution for employees and consultants to
-                    securely and efficiently collaborate.
+                     Lead infrastructure engineer on a distributed team; building and maintaining private cloud infrastructure to support business operations at 14 remote sites and two data centers globally. Manage operational support of customer facing web portals and business analytics platforms. Participate in annual Sarbanes–Oxley compliance audit to review and update controls. Plan and lead individual and team based projects.
+                     <ul type = "circle">
+                        <span>&bull;</span> Managed complete inventory of IT systems, including servers and end user devices, through centralized database<br><br>
+                        <span>&bull;</span> Developed, managed, and executed Disaster Recovery and Business Continuity plans essential to 24x7 global business operations<br><br>
+                        <span>&bull;</span> Collaborated with business leads to develop and implement company-wide sharing and collaboration tools with a focus on security and protection of intellectual property <br><br>
+                     </ul>                   
                   </p>
 
                </div>
@@ -246,24 +237,17 @@
 
                 <p>
                   Network Administrator for 1,200 employees at 50+ remote office
-                  locations. Ensured the overall functionality of the LANDesk environment
+                  locations. Lead desktop support engineer, managing the overall functionality of the LANDesk management environment
                   consisting of 150 servers, 1,200 workstations, and over 100 laptops.
-                  Wrote scripts for image deployment, software deployment, and
-                  security patches. Worked with a team to upgrade Active Directory
-                  from 2000 to 2003 to 2008 R2 while rebuilding and reorganizing
-                  Active Directory, GPO’s, and logon scripts. Worked with a team
-                  to upgrade and manage VMware ESXi environment from 3.5 to 5.
-                  Lead companywide deployment and training of Windows 7. Worked
-                  with team to upgrade Lotus Domino from 6.5 to 8.5 and lead the
-                  deployment of Notes Client and implementation of Lotus Connections
-                  and Quickr servers. Managed corporate messaging systems with
-                  Domino/Sametime and Blackberry Enterprise Server for the organization.
-                  Lead migration from MacAfee AV to Kaspersky AV. Developed project
-                  plans and lead deployment of Lumension Endpoint device security
-                  and PGP encryption as part of a security compliance project.
-                  Lead a "Green" initiative by deploying Verismic Power Manager,
-                  saving the organization over $60,000 per year. Provided top
-                  level and executive technical support.
+                  Automated PC image deployment, software configuration management, and
+                  security patches. Provided top level and executive technical support. 
+                   
+                  <ul type = "circle">
+                     <span>&bull;</span> Virtualized Windows and Linux server infrastructure with VMware ESXi<br><br>
+                     <span>&bull;</span> Managed corporate messaging systems with Lotus Domino, Sametime and Blackberry Enterprise Server for the organization<br><br>
+                     <span>&bull;</span> Developed project plans and led deployment of Lumension Endpoint device security and PGP encryption as part of a security compliance project<br><br>
+                     <span>&bull;</span> Led an energy saving initiative by deploying custom power management software saving the organization over $60,000 per year<br><br>
+                  </ul>
                 </p>
 
               </div>
@@ -313,7 +297,9 @@
          </div> <!-- main-col end -->
 
       </div> <!-- End Work -->
+   </section>
 
+   <section id="education">
     <!-- Education
       ----------------------------------------------- -->
       <div class="row education">
@@ -329,7 +315,7 @@
                <div class="twelve columns">
 
                   <h3>Drexel University</h3>
-                  <p class="info">Bachelor of Science in Information Systems <span>&bull;</span> <em class="date">August 2010</em></p>
+                  <p class="info">Bachelor of Science in Information Systems <span>&bull;</span> <em class="date">2010</em></p>
 
                   <p>
                     B.S. in Information Systems with a Business Minor. Five year
@@ -350,7 +336,7 @@
                <div class="twelve columns">
 
                   <h3>La Salle College High School</h3>
-                  <p class="info">High School Diploma <span>&bull;</span> <em class="date">June 2005</em></p>
+                  <p class="info">High School Diploma <span>&bull;</span> <em class="date">2005</em></p>
 
                   <p>
                     Head network manager of a Microsoft Certified IT Academy,
@@ -369,36 +355,31 @@
          </div> <!-- main-col end -->
 
       </div> <!-- End Education -->
+   </section>
 
+   <section id="skills">
       <!-- Skills
       ----------------------------------------------- -->
       <div class="row skill">
 
          <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span>Expertise</span></h1>
          </div>
 
          <div class="nine columns main-col">
 
-            <p>I possess a wide array of both hard and soft skills that cover
-              almost every aspect of system administration and leadership in IT.
-              I have been working in datacenters for around 10 years and in that time
-              have acquired hands on experience with every Windows operation system,
-              various Linux and UNIX based operating systems, a handful of
-              cloud and virtualization platforms including VMware ESXi and AWS, most Cisco networking products
-              and almost every major server and storage area network vendor.
-              Please download my resume for a more indepth look at the
-              technologies I have worked with.
+            <p>Over the years I've developed proficiency in a wide array of both technical and leadership areas. 
+               I'm continually on a path of self development and regularly attend meetups, conferences, and training seminars to promote my professional growth.
             </p>
 
 				<div class="bars">
 
 				   <ul class="skills">
-					    <li><span class="bar-expand linux"></span><em>DevOps</em></li>
-              <li><span class="bar-expand windows"></span><em>Linux</em></li>
+					   <li><span class="bar-expand linux"></span><em>DevOps Best Practices</em></li>
+                  <li><span class="bar-expand windows"></span><em>CI/CD Automation</em></li>
 					  	<li><span class="bar-expand virtualization"></span><em>Cloud & Virtualization</em></li>
-					  	<li><span class="bar-expand networking"></span><em>Networking</em></li>
-					  	<li><span class="bar-expand security"></span><em>Security</em></li>
+					  	<li><span class="bar-expand networking"></span><em>Leadership & Development</em></li>
+					  	<li><span class="bar-expand security"></span><em>Project Management</em></li>
                         <!--  <li><span class="bar-expand cloud"></span><em>Cloud</em></li> -->
 					</ul>
 
@@ -407,8 +388,7 @@
 			</div> <!-- main-col end -->
 
       </div> <!-- End skills -->
-
- </section> <!-- Resume Section End-->
+   </section> <!-- Resume Section End-->
 
 
    <!-- Contact Section
@@ -527,20 +507,16 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-              <!--<li><a href="https://www.facebook.com/tomreeb"><i class="fa fa-facebook"></i></a></li>-->
-              <li><a href="https://twitter.com/tomreeb"><i class="fa fa-twitter"></i></a></li>
-              <!--<li><a href="https://google.com/+TomReeb"><i class="fa fa-google-plus"></i></a></li>-->
-              <!--<li><a href="http://tom.reeb.me"><i class="fa fa-tumblr"></i></a></li>-->
-              <li><a href="https://github.com/reebzor"><i class="fa fa-github"></i></a></li>
-              <li><a href="http://www.linkedin.com/in/tomreeb/"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://hub.docker.com/u/tomreeb/"><i class="fa fa-docker"></i></a></li>
-              <li><a href="http://instagram.com/tomreeb/"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="https://www.strava.com/athletes/reeb"><i class="fa fa-bicycle"></i></a></li>
+              <li><a href="https://twitter.com/tomreeb"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://github.com/reebzor"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.linkedin.com/in/tomreeb/"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://hub.docker.com/u/tomreeb/"><i class="fab fa-docker"></i></a></li>
+              <li><a href="http://instagram.com/tomreeb/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.strava.com/athletes/reeb"><i class="fab fa-strava"></i></a></li>
             </ul>
 
             <ul class="copyright">
                <li>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Tom Reeb</li>
-               <!--<li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>-->
                <li>All Rights Reserved.</li>
             </ul>
 
