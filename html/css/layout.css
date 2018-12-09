@@ -232,13 +232,13 @@ ul#nav li.current a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d1. Resume Section
 /* ------------------------------------------------------------------ */
 
 #resume {
    background: #fff;
    padding-top: 90px;
-   padding-bottom: 72px;
+   padding-bottom: 0px;
    overflow: hidden;
 }
 
@@ -277,6 +277,106 @@ ul#nav li.current a { color: #F06000; }
    margin-left: 5px;
 }
 #resume .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d2. Education Section
+/* ------------------------------------------------------------------ */
+
+#education {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#education a, #education a:visited  { color: #11ABB0; }
+#education a:hover, #education a:focus { color: #313131; }
+
+#education h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#education h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#education h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#education .header-col { padding-top: 9px; }
+#education .main-col { padding-right: 10%; }
+
+.education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#education .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#education .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#education .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d3. Skills Section
+/* ------------------------------------------------------------------ */
+
+#skills {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#skills a, #skills a:visited  { color: #11ABB0; }
+#skills a:hover, #skills a:focus { color: #313131; }
+
+#skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#skills h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#skills h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+.skills, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+
+}
+#skills .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#skills .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#skills .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
@@ -581,7 +681,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #call-to-action h1 span { display: none; }
 #call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
+   font-family: 'Font Awesome 5 Free';
    content: "\f0ac";
 	padding-right: 10px;
 	font-size: 72px;
@@ -649,7 +749,7 @@ call-to-action .button {
 #testimonials h1 span { display: none; }
 #testimonials .header-col { padding-top: 9px; }
 #testimonials .header-col h1:before {
-   font-family: 'FontAwesome';
+   font-family: 'Font Awesome 5 Free';
    content: "\f10d";
 	padding-right: 10px;
 	font-size: 72px;
@@ -794,7 +894,7 @@ call-to-action .button {
 }
 #contact h1 span { display: none; }
 #contact h1:before {
-   font-family: 'FontAwesome';
+   font-family: 'Font Awesome 5 Free';
    content: "\f0e0";
 	padding-right: 10px;
 	font-size: 72px;
