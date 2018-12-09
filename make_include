@@ -1,0 +1,6 @@
+NS = tomreeb
+
+IMAGE_NAME = dotcom
+CONTAINER_NAME = dotcom
+PORTS = -p 80:80
+VOLUMES = 

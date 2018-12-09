@@ -1,0 +1,32 @@
+file:
+  /var/log/nginx/access.log:
+    exists: true
+    linked-to: /dev/stdout
+    filetype: symlink
+    contains: []
+  /var/log/nginx/error.log:
+    exists: true
+    linked-to: /dev/stderr
+    filetype: symlink
+    contains: []
+port:
+  tcp:80:
+    listening: true
+    ip:
+    - 0.0.0.0
+user:
+  nginx:
+    exists: true
+    uid: 100
+    gid: 101
+    groups:
+    - nginx
+    home: /var/cache/nginx
+    shell: /sbin/nologin
+group:
+  nginx:
+    exists: true
+    gid: 101
+process:
+  nginx:
+    running: true
