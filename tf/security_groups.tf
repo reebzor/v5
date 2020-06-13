@@ -3,7 +3,7 @@
 resource "aws_security_group" "lb" {
   name        = "tf-ecs-alb"
   description = "controls access to the ALB"
-  vpc_id      = "${aws_vpc.dotcom_fargate.id}"
+  vpc_id      = aws_vpc.dotcom_fargate.id
 
   ingress {
     protocol    = "tcp"
@@ -31,13 +31,13 @@ resource "aws_security_group" "lb" {
 resource "aws_security_group" "ecs_tasks" {
   name        = "tf-ecs-tasks"
   description = "allow inbound access from the ALB only"
-  vpc_id      = "${aws_vpc.dotcom_fargate.id}"
+  vpc_id      = aws_vpc.dotcom_fargate.id
 
   ingress {
     protocol        = "tcp"
-    from_port       = "${var.app_port}"
-    to_port         = "${var.app_port}"
-    security_groups = ["${aws_security_group.lb.id}"]
+    from_port       = var.app_port
+    to_port         = var.app_port
+    security_groups = [aws_security_group.lb.id]
   }
 
   egress {
@@ -47,3 +47,4 @@ resource "aws_security_group" "ecs_tasks" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+

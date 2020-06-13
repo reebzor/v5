@@ -47,3 +47,4 @@ variable "elb_security_policy" {
   description = "ELB Security Policy Name"
   default     = "ELBSecurityPolicy-TLS-1-2-Ext-2018-06"
 }
+
