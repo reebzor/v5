@@ -10,7 +10,7 @@ variable "az_count" {
 
 variable "desired_tasks" {
   description = "Desired number of instances"
-  default     = 3
+  default     = 1
 }
 
 variable "app_port" {
@@ -48,3 +48,7 @@ variable "elb_security_policy" {
   default     = "ELBSecurityPolicy-TLS-1-2-Ext-2018-06"
 }
 
+variable "vpc_cidr_block" {
+  description = "IP of VPC in CIDR Notation"
+  default = "172.18.0.0/16"
+}
