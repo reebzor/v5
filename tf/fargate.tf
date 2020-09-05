@@ -42,14 +42,14 @@ resource "aws_ecs_service" "dotcom_fargate" {
   }
 
   load_balancer {
-    target_group_arn = aws_alb_target_group.dotcom_fargate.id
+    target_group_arn = aws_lb_target_group.dotcom_fargate.id
     container_name   = "dotcom_fargate"
     container_port   = var.app_port
   }
 
   depends_on = [
-    aws_alb_listener.front_end80,
-    aws_alb_listener.front_end443,
+    aws_lb_listener.front_end80,
+    aws_lb_listener.front_end443,
   ]
 }
 
