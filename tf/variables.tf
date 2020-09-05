@@ -23,9 +23,14 @@ variable "hosted_zone_name" {
   default     = "reeb.me."
 }
 
+variable "secondary_zone_name" {
+  description = "Name of the secondary DNS zone to use"
+  default     = "tomreeb.com."
+}
+
 variable "subdomain" {
   description = "Subdomain to be used with hosted_zone_name (must end in .)"
-  default     = "fargate."
+  default     = "www."
 }
 
 variable "app_image" {
