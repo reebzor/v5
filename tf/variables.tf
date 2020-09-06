@@ -60,5 +60,5 @@ variable "elb_security_policy" {
 
 variable "vpc_cidr_block" {
   description = "IP of VPC in CIDR Notation"
-  default = "172.18.0.0/16"
+  default     = "172.18.0.0/16"
 }

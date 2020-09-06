@@ -1,8 +1,8 @@
 resource "aws_lb" "dotcom_fargate" {
-  name            = "tf-ecs-dotcom"
+  name               = "tf-ecs-dotcom"
   load_balancer_type = "application"
-  subnets         = aws_subnet.public.*.id
-  security_groups = [aws_security_group.lb.id]
+  subnets            = aws_subnet.public.*.id
+  security_groups    = [aws_security_group.lb.id]
 
   access_logs {
     bucket  = aws_s3_bucket.dotcom_fargate.bucket
