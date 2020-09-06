@@ -33,9 +33,14 @@ variable "subdomain" {
   default     = "www."
 }
 
-variable "app_image" {
+variable "container_image" {
   description = "Image to use"
-  default     = "tomreeb/dotcom:latest"
+  default     = "tomreeb/dotcom"
+}
+
+variable "container_image_tag" {
+  description = "Image tag to use"
+  default     = "3.0"
 }
 
 variable "fargate_cpu" {
