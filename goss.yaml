@@ -17,8 +17,6 @@ port:
 user:
   nginx:
     exists: true
-    uid: 100
-    gid: 101
     groups:
     - nginx
     home: /var/cache/nginx
