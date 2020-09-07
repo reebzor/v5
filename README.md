@@ -2,7 +2,6 @@
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tomreeb/dotcom)
 
-
 This is my [personal website](https://tomreeb.com)
 
 Credit to [Styleshout's Ceevee](http://www.styleshout.com/free-templates/ceevee/) web template
