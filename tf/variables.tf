@@ -38,10 +38,10 @@ variable "container_image" {
   default     = "tomreeb/dotcom"
 }
 
-variable "container_image_tag" {
-  description = "Image tag to use"
-  default     = "3.0"
-}
+# variable "container_image_tag" {
+#   description = "Image tag to use"
+#   default     = "3.0"
+# }
 
 variable "fargate_cpu" {
   description = "Task CPU units"
