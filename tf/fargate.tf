@@ -13,7 +13,7 @@ resource "aws_ecs_task_definition" "dotcom_fargate" {
 [
   {
     "cpu": ${var.fargate_cpu},
-    "image": "${var.container_image}:${var.container_image_tag}",
+    "image": "${var.container_image}:${file("${path.module}/../version.txt")}",
     "memory": ${var.fargate_memory},
     "name": "dotcom_fargate",
     "networkMode": "awsvpc",
