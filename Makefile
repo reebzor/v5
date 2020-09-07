@@ -25,7 +25,7 @@ shell: build
 	docker run --rm -it $(PORTS) $(VOLUMES) $(APP):$(VERSION) /bin/ash
 
 rm:
-	docker rm $(APP):$(VERSION)
+	docker rmi $(APP):$(VERSION)
 
 clean:
 	docker kill $(CONTAINER) || true
