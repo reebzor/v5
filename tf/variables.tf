@@ -35,7 +35,7 @@ variable "subdomain" {
 
 variable "container_image" {
   description = "Image to use"
-  default     = "tomreeb/dotcom"
+  default     = "766004487305.dkr.ecr.us-east-1.amazonaws.com/tomreeb/dotcom"
 }
 
 # variable "container_image_tag" {
